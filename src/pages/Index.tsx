@@ -53,10 +53,9 @@ const Index = () => {
         description: `Found ${searchResults.totalResults} professional contacts`,
       });
     } catch (error) {
-      console.error('Search error:', error);
       toast({
         title: "Search Failed",
-        description: error instanceof Error ? error.message : "Unable to complete search. Please try again.",
+        description: "Unable to complete search. Please try again.",
         variant: "destructive",
       });
     } finally {
